@@ -1,13 +1,15 @@
+let navBar = document.querySelector('nav')
 let navBtn = document.querySelector('#nav-btn')
 let menuItemcontainer = document.querySelector('.menu-itemcontainer')
 let label2 = document.querySelectorAll('.menus>li>ul')
 let label3 = document.querySelectorAll('.menus>li>ul>li>ul')
 
 navBtn.onclick = (e)=>{
+    let b = e.target
+    navBar.classList.toggle('nav-height')
     menuItemcontainer.classList.toggle('menu-itemcontainer-hide')
-    e.target.classList.toggle('fa-bars')
-    e.target.classList.toggle('fa-xmark')
-    
+    b.classList.toggle('fa-bars')
+    b.classList.toggle('fa-xmark')
 }
 
 for (let e of label2) {
