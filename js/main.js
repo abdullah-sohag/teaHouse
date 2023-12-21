@@ -1,9 +1,10 @@
-let navBar = document.querySelector('nav')
-let navBtn = document.querySelector('#nav-btn')
-let menuItemcontainer = document.querySelector('.menu-itemcontainer')
-let label2 = document.querySelectorAll('.menus>li>ul')
-let label3 = document.querySelectorAll('.menus>li>ul>li>ul')
+const navBar = document.querySelector('nav')
+const navBtn = document.querySelector('#nav-btn')
+const menuItemcontainer = document.querySelector('.menu-itemcontainer')
+const label2 = document.querySelectorAll('.menus>li>ul')
+const label3 = document.querySelectorAll('.menus>li>ul>li>ul')
 
+// nab menu
 navBtn.onclick = (e)=>{
     let b = e.target
     navBar.classList.toggle('nav-height')
@@ -35,4 +36,35 @@ for (let e of label3) {
         e.parentElement.classList.toggle('drop-icon-transition')
     })
 }
+// -/nab menu
 
+// splite js
+let splide = new Splide( '.splide-one', {
+    type  : 'fade',
+    rewind: true,
+  } );
+  
+  splide.mount();
+
+
+let splideTwo = new Splide( '.splide-two', {
+    type   : 'loop',
+  
+  focus  : 'center',
+  pagination : false,
+  gap:10,
+  breakpoints : {
+    500: {
+        perPage: 1,
+    },
+    768: {
+        perPage: 2,
+    },
+    2000: {
+        perPage: 3,
+    },
+  },
+  } );
+  
+  splideTwo.mount();
+// -/splite js

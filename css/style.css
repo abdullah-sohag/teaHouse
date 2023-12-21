@@ -32,6 +32,12 @@
 .bg-color-accent{
     background-color: var(--accent-color);
 }
+.white-color{
+    color: var(--white-color);
+}
+.bg-color-white{
+    background-color: var(--white-color);
+}
 /* -/color */
 
 
@@ -113,6 +119,9 @@ html{
 .fs-20{
     font-size: 20px;
 }
+.fs-24{
+    font-size: 24px;
+}
 .fs-26{
     font-size: 26px;
 }
@@ -125,6 +134,8 @@ html{
 
 /* -/comon style */
 
+
+
 /* body */
 
 /* header */
@@ -132,6 +143,7 @@ html{
     .logo-img{
         width: 100px;
         height: 80px;
+        z-index: 5;
     }
     /* navigation menu designe */
 
@@ -185,9 +197,211 @@ html{
         }
         nav{
             box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.19);
+            
         }
     
 /* -/ header */
+
+
+/* main */
+        /* banner */
+            .banner{
+                min-height: 400px;
+                height: 100vh;
+            }
+            .banar-content{
+                backdrop-filter: blur(3px);
+            }
+            .banner-head{
+                font-size: 4.3rem;
+                max-width: 490px;
+            }
+
+            /* animation */
+            li .banner-card .banar-content h2{
+                transform: scale(0.5);
+                transition-property: transform;
+                transition-duration: 0.9s;
+            }
+            li.is-active.is-visible .banner-card .banar-content h2{
+                transform: scale(1);
+            }
+
+            li .banner-card .banar-content p{
+                transform: translateY(-50px);
+                transition-property: transform;
+                transition-duration: 0.9s;
+            }
+            li.is-active.is-visible .banner-card .banar-content p{
+                transform: translateY(0);
+            }
+
+            li .banner-card .banar-content a{
+                transform: translateY(50px);
+                transition-property: transform;
+                transition-duration: 0.9s;
+            }
+            li.is-active.is-visible .banner-card .banar-content a{
+                transform: translateY(-0px);
+            }
+            /* -/animation */
+
+        /* -/banner */
+
+
+        /* about us */
+        .tiny-img{
+            width: 100%;
+            height: 100%;
+            max-width: 107px;
+            max-height: 133px;
+        }
+        .larg-img{
+            width: 100%;
+            height: 100%;
+            max-width: 214px;
+            max-height: 267px;
+        }
+        .about-us-head h3{
+            line-height: 30px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .about-us-head h2{
+            font-size: 2.8rem;
+            line-height: 34px;
+            font-weight: 900;
+        }
+        .about-us-head::before{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background-color: var(--primary-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .about-us-head::after{
+            --round-mejer:20px;
+            content: '';
+            background-color: var(--secondary-color);
+            width: var(--round-mejer);
+            height: var(--round-mejer);
+            position: absolute;
+            bottom: 0;
+            border-radius: 12px;
+            border: 6px solid var(--white-color);
+            left: 50%;
+            transform: translate(-100%, 50%);
+        }
+        .border-bottom{
+            border-bottom: 1px solid var(--primary-color);
+        }
+        .about-artical figure img{
+            width: 100%;
+            height: 100%;
+            max-width: 528px;
+            max-height: 352px;
+        }
+        .about-artical .artical h3{
+            line-height: 24px;
+            font-weight: 700;
+        }
+        .about-artical .artical p{
+            font-weight: 400;
+            line-height: 24px;
+        }
+        /* -/about us */
+
+        /* our products */
+            #ourProduct{
+                background-image: url('/assets/product-bg.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+            #ourProduct .top-ourproducts{
+                padding-bottom: 32px;
+            }
+            #ourProduct .top-ourproducts::after{
+                content: '';
+                position: absolute;
+                width: 50%;
+                height: 3px;
+                background-color: var(--primary-color);
+                bottom: 0;
+                transform: translateX(-50%);
+            }
+            #ourProduct .top-ourproducts::before{
+                --round-mejer:20px;
+                content: '';
+                background-color: var(--secondary-color);
+                width: var(--round-mejer);
+                height: var(--round-mejer);
+                position: absolute;
+                bottom: 0;
+                border-radius: 12px;
+                border: 6px solid var(--white-color);
+                left: 50%;
+                bottom: -8px;
+                transform: translate(-50%,);
+                z-index: 5;
+            }
+            #ourProduct .top-ourproducts h3{
+                line-height: 30px;
+                margin-bottom: 16px;
+            }
+            #ourProduct .top-ourproducts h2{
+                font-size: 2.8rem;
+                line-height: 34px;
+            }
+            .carousel-card-container{
+                max-width: 415px;
+            }
+            .carousel-card-container figure{
+                max-width: 415px;
+                max-height: 276px;
+            }
+            .carousel-card-container figure img{
+                width: 100%;
+                height: 100%;
+            }
+            .artica-content{
+                background-color: #FFFFFF;
+                max-width: 367px;
+                margin-top: -52px;
+                z-index: 3;
+                position: relative;
+                
+            }
+            .artica-content h3{
+                line-height: 29px;
+                font-weight: 700;
+            }
+            .artica-content p{
+                line-height: 24px;
+                font-weight: 400;
+            }
+
+           #ourProduct button.splide__arrow{
+                background-color: var(--primary-color);
+                padding: 5px;
+                width: 40px;
+                height: 40px;
+            }
+           #ourProduct button.splide__arrow svg{
+                fill: var(--accent-color);
+            }
+           #ourProduct button.splide__arrow:hover{
+                background-color: var(--accent-color);
+            }
+           #ourProduct button.splide__arrow:hover svg{
+                fill: var(--primary-color);
+            }
+/* -/our products */
+
+/* -/main */
 
 /* -/body */
 
@@ -254,6 +468,21 @@ html{
         font-size: 77.5%;
     }
 /* ---- */
+
+/* our product */
+   #ourProduct .splide__arrows{
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+    }
+    
+   #ourProduct button.splide__arrow.splide__arrow--prev{
+        margin-left: -70px;
+    }
+   #ourProduct button.splide__arrow.splide__arrow--next{
+        margin-right: -70px;
+    }
+/* -/our product */
 
 }
 
@@ -327,6 +556,17 @@ html{
         transform: rotate(-90deg);
     }
     /* -/navigation menu designe */
+
+
+    /* about section */
+    .about-us-head::before{
+        left: 0;
+        transform: translateX(0);
+    }
+    .about-us-head::after{
+        left: 25%;
+    }
+    /* -/about section */
    
 
 }
