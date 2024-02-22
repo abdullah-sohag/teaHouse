@@ -67,4 +67,9 @@ let splideTwo = new Splide( '.splide-two', {
   } );
   
   splideTwo.mount();
+
+  let splideThree = new Splide('.splide-three',{
+    type   : 'loop',
+  });
+  splideThree.mount();
 // -/splite js

@@ -262,17 +262,17 @@ html{
             max-width: 214px;
             max-height: 267px;
         }
-        .about-us-head h3{
+        .about-us-head h3,.featured-head h3{
             line-height: 30px;
             font-weight: 600;
             margin-bottom: 16px;
         }
-        .about-us-head h2{
+        .about-us-head h2,.featured-head h2{
             font-size: 2.8rem;
             line-height: 34px;
             font-weight: 900;
         }
-        .about-us-head::before{
+        .about-us-head::before,.featured-head::before{
             content: '';
             position: absolute;
             width: 50%;
@@ -282,7 +282,7 @@ html{
             left: 50%;
             transform: translateX(-50%);
         }
-        .about-us-head::after{
+        .about-us-head::after,.featured-head::after{
             --round-mejer:20px;
             content: '';
             background-color: var(--secondary-color);
@@ -321,10 +321,10 @@ html{
                 background-position: center;
                 background-size: cover;
             }
-            #ourProduct .top-ourproducts,#onlineStore .top-ourproducts{
+            #ourProduct .top-ourproducts,#onlineStore .top-onlineStore,#testimonial .top-testimonial{
                 padding-bottom: 32px;
             }
-            #ourProduct .top-ourproducts::after, #onlineStore .top-ourproducts::after{
+            #ourProduct .top-ourproducts::after, #onlineStore .top-onlineStore::after, #testimonial .top-testimonial::after{
                 content: '';
                 position: absolute;
                 width: 50%;
@@ -333,7 +333,7 @@ html{
                 bottom: 0;
                 transform: translateX(-50%);
             }
-            #ourProduct .top-ourproducts::before,#onlineStore .top-ourproducts::before{
+            #ourProduct .top-ourproducts::before,#onlineStore .top-onlineStore::before,#testimonial .top-testimonial::before{
                 --round-mejer:20px;
                 content: '';
                 background-color: var(--secondary-color);
@@ -348,11 +348,11 @@ html{
                 transform: translate(-50%,);
                 z-index: 5;
             }
-            #ourProduct .top-ourproducts h3{
+            #ourProduct .top-ourproducts h3,#onlineStore .top-onlineStore h3,#testimonial .top-testimonial h3{
                 line-height: 30px;
                 margin-bottom: 16px;
             }
-            #ourProduct .top-ourproducts h2{
+            #ourProduct .top-ourproducts h2,#onlineStore .top-onlineStore h2,#testimonial .top-testimonial h2{
                 font-size: 2.8rem;
                 line-height: 34px;
             }
@@ -489,6 +489,39 @@ html{
                 background-color: var(--secondary-color);
             }
             /* -/ online store */
+
+            /* testy moneyal area */
+            #testimonial{
+                background-image: linear-gradient(rgba(137, 180, 78, 0.57),rgba(137, 180, 78, 0.57)),url('/assets/testimonial-bg.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .testimonial-splide-lists{
+                height: 70vh;
+            }
+
+            .testimonial-card{
+                width: 515px;
+                height: 265px;
+                border: 15px solid var(--primary-color);
+            }
+            .testimonial-card p{
+                font-size: 1rem;
+            }
+            .client-area img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+            }
+            .client h5{
+                font-size: 1.3rem;
+            }
+            .digination{
+                font-size: 1rem;
+            }
+            /* -/ testy moneyal area */
 
 /* -/main */
 
@@ -660,11 +693,11 @@ html{
 
 
     /* about section */
-    .about-us-head::before{
+    .about-us-head::before,.featured-head::before{
         left: 0;
         transform: translateX(0);
     }
-    .about-us-head::after{
+    .about-us-head::after,.featured-head::after{
         left: 25%;
     }
     /* -/about section */
