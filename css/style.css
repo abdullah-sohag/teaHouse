@@ -321,10 +321,10 @@ html{
                 background-position: center;
                 background-size: cover;
             }
-            #ourProduct .top-ourproducts{
+            #ourProduct .top-ourproducts,#onlineStore .top-ourproducts{
                 padding-bottom: 32px;
             }
-            #ourProduct .top-ourproducts::after{
+            #ourProduct .top-ourproducts::after, #onlineStore .top-ourproducts::after{
                 content: '';
                 position: absolute;
                 width: 50%;
@@ -333,7 +333,7 @@ html{
                 bottom: 0;
                 transform: translateX(-50%);
             }
-            #ourProduct .top-ourproducts::before{
+            #ourProduct .top-ourproducts::before,#onlineStore .top-ourproducts::before{
                 --round-mejer:20px;
                 content: '';
                 background-color: var(--secondary-color);
@@ -464,6 +464,32 @@ html{
             }
 /* -/drink of health and beauty */
 
+            /* online store */
+            .product-card-cover{
+                max-width: 526px;
+                max-height: 579px;
+            }
+            .product-discriptions p{
+                font-size: 1.3rem;
+            }
+            .product-discriptions h3,.product-discriptions h4{
+                font-size: 2rem;
+            }
+            .product-card-overlay{
+                background-color: rgba(138, 180, 78, .3);
+                opacity: 0;
+            }
+            .product-card-overlay:hover{
+                opacity: 1;
+            }
+            .more-btn{
+                background-color: var(--primary-color);
+            }
+            .add-btn{
+                background-color: var(--secondary-color);
+            }
+            /* -/ online store */
+
 /* -/main */
 
 /* -/body */
@@ -500,7 +526,12 @@ html{
     }
     /* ---- */
  
-
+    /* online store */
+    .product-card-cover{
+        width: 515px;
+        height: 570px;
+    }
+    /* -/ online store */
     
 }
 /* md */
@@ -546,6 +577,13 @@ html{
         margin-right: -70px;
     }
 /* -/our product */
+
+/* online store */
+.product-card-cover{
+    width: 335px;
+    height: 475px;
+}
+/* -/ online store */
 
 }
 
@@ -630,6 +668,13 @@ html{
         left: 25%;
     }
     /* -/about section */
+
+    /* online store */
+    .product-card-cover{
+        width: 295px;
+        height: 450px;
+    }
+    /* -/ online store */
    
 
 }
@@ -663,7 +708,12 @@ html{
         font-size: 92.5%;
     }
     /* ---- */
-   
+   /* online store */
+   .product-card-cover{
+    width: 355px;
+    height: 470px;
+}
+   /* -/ online store */
 
 
 }
