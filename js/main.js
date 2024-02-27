@@ -73,3 +73,17 @@ let splideTwo = new Splide( '.splide-two', {
   });
   splideThree.mount();
 // -/splite js
+
+// loader
+window.addEventListener('load',()=>{
+    
+    const loader = document.querySelector('.loader')
+    setTimeout(hideLoder,1500)
+    
+    function hideLoder (){
+        // loader.style.display = 'none'
+        loader.classList.add('loader--hiden')
+        loader.classList.add('lodar--none')
+    }
+})
+// -/loader
