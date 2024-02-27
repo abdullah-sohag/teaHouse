@@ -390,7 +390,20 @@ html{
                 bottom: -8px;
                 transform: translate(-50%,);
                 z-index: 5;
+
+                animation-name: moving;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+
             }
+
+            @keyframes moving {
+                0%   {left: 28%;}
+                100% {left: 72%;}
+                }
+              
             #ourProduct .top-ourproducts h3,#onlineStore .top-onlineStore h3,#testimonial .top-testimonial h3,#contact-us .top-contact-us h3{
                 line-height: 30px;
                 margin-bottom: 16px;
