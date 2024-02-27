@@ -85,5 +85,12 @@ window.addEventListener('load',()=>{
         loader.classList.add('loader--hiden')
         loader.classList.add('lodar--none')
     }
+
+    loader.addEventListener('transitionend',()=>{
+             document.body.removeChild(loader)
+        
+             loader.remove()
+        })
+
 })
 // -/loader
