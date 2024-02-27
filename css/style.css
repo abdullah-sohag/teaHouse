@@ -536,6 +536,29 @@ html{
 
 /* -/main */
 
+/* footer */
+        .f-title{
+            font-size: 1.5rem;
+        }
+        address p{
+            font-size: 0.9rem;
+        }
+        address p i{
+            padding-right: 5px;
+        }
+        .social-links a{
+            background-color: var(--primary-color);
+        }
+        .copyright-container{
+            background-color: #252525;
+        }
+        .sub-btn{
+            background-color: var(--primary-color);
+            height: 30px;
+            transform: translateX(-50px);
+        }
+/* -/ footer */
+
 /* -/body */
 
 
@@ -576,6 +599,14 @@ html{
         height: 570px;
     }
     /* -/ online store */
+
+    /* footer */
+    .sub-btn{
+        
+        height: 35px;
+        transform: translateX(-55px);
+    }
+    /* -/ footer */
     
 }
 /* md */
@@ -628,6 +659,14 @@ html{
     height: 475px;
 }
 /* -/ online store */
+
+/* footer */
+.sub-btn{
+        
+    height: 40px;
+    transform: translateX(-60px);
+}
+/* -/ footer */
 
 }
 
@@ -719,6 +758,15 @@ html{
         height: 450px;
     }
     /* -/ online store */
+
+
+    /* footer */
+    .sub-btn{
+        
+        height: 45px;
+        transform: translateX(-70px);
+    }
+    /* -/ footer */
    
 
 }
@@ -760,6 +808,15 @@ html{
    /* -/ online store */
 
 
+   /* footer */
+   .sub-btn{
+        
+    height: 50px;
+    transform: translateX(-75px);
+    }
+/* -/ footer */
+
+
 }
 /* xxl */
 @media screen and (min-width: 1401px){
@@ -787,4 +844,11 @@ html{
     html{
         font-size: 100%;
     }
+
+
+    /* footer */
+   .sub-btn{
+    transform: translateX(-80px);
+    }
+/* -/ footer */
 }
