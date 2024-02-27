@@ -507,6 +507,11 @@ html{
                 animation: pulse-border 1500ms ease-out infinite;
 
             }
+
+            .play-button{
+                height: 60vh;
+            }
+
             @keyframes pulse-border {
                 0% {
                     transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -806,6 +811,12 @@ html{
         left: 25%;
     }
     /* -/about section */
+
+    /* drink of health and beauty */
+    .play-button{
+        height: auto;
+    }
+    /* -/drink of health and beauty */
 
     /* online store */
     .product-card-cover{
