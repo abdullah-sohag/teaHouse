@@ -549,6 +549,9 @@ html{
             .add-btn{
                 background-color: var(--secondary-color);
             }
+            .product-card-overlay a.btn:hover{
+                color: var(--accent-color);
+            }
             /* -/ online store */
 
             /* testy moneyal area */

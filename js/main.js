@@ -78,6 +78,13 @@ let splideTwo = new Splide( '.splide-two', {
 AOS.init();
 // -/ AOS
 
+// tilt js
+VanillaTilt.init(document.querySelectorAll(".product-card-cover"), {
+    max: 25,
+    speed: 400
+});
+// -/ tilt js
+
 // loader
 window.addEventListener('load',()=>{
     
