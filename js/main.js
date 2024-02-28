@@ -74,6 +74,10 @@ let splideTwo = new Splide( '.splide-two', {
   splideThree.mount();
 // -/splite js
 
+// AOS
+AOS.init();
+// -/ AOS
+
 // loader
 window.addEventListener('load',()=>{
     
