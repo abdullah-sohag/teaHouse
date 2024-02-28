@@ -85,6 +85,15 @@ VanillaTilt.init(document.querySelectorAll(".product-card-cover"), {
 });
 // -/ tilt js
 
+// typed umd
+let typed = new Typed('.animated-text',{
+    strings: ['the body','our mind','our helth'],
+    typeSpeed: 200,
+    backSpeed: 150,
+    loop:true,
+})
+// -/ typed umd
+
 // loader
 window.addEventListener('load',()=>{
     
