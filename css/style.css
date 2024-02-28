@@ -359,7 +359,7 @@ html{
 
         /* our products */
             #ourProduct{
-                background-image: url('/assets/product-bg.png');
+                background-image: url('https://i.postimg.cc/zG3yN57n/product-bg.png');
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: cover;
@@ -471,7 +471,7 @@ html{
 
 /* drink of health and beauty */
             #htalthBeauty{
-                background-image: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)),url('/assets/video-bg.jpg');
+                background-image: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)),url('https://i.postimg.cc/mrHhcw0k/video-bg.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -556,7 +556,7 @@ html{
 
             /* testy moneyal area */
             #testimonial{
-                background-image: linear-gradient(rgba(137, 180, 78, 0.57),rgba(137, 180, 78, 0.57)),url('/assets/testimonial-bg.jpg');
+                background-image: linear-gradient(rgba(137, 180, 78, 0.57),rgba(137, 180, 78, 0.57)),url('https://i.postimg.cc/0y3b23Xh/testimonial-bg.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
